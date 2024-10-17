@@ -67,6 +67,41 @@
                                     <action selector="iniciarSesionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="94O-kc-iTb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Y9-2m-tse">
+                                <rect key="frame" x="107" y="524" width="200" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="cmt-Ad-glx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Anónimo">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="anonymousLoginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Tt-xO-7ZT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtQ-OY-dfk">
+                                <rect key="frame" x="172" y="587" width="71" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Google">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aCa-DE-rTC" customClass="GIDSignInButton">
+                                <rect key="frame" x="87" y="663" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <action selector="btnGmail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J25-zg-VBL"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -78,6 +113,8 @@
                             <constraint firstItem="kJt-Dc-sPW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CPo-bI-uHL"/>
                             <constraint firstItem="7py-n1-Eis" firstAttribute="top" secondItem="TPb-0b-Nfo" secondAttribute="bottom" constant="25" id="EKl-Sj-AFq"/>
                             <constraint firstItem="Rij-Od-a7t" firstAttribute="centerX" secondItem="TPb-0b-Nfo" secondAttribute="centerX" id="FcL-Nf-cvG"/>
+                            <constraint firstItem="0cb-5Z-iwK" firstAttribute="centerX" secondItem="7Y9-2m-tse" secondAttribute="centerX" id="GWM-Cn-9Vz"/>
+                            <constraint firstItem="7Y9-2m-tse" firstAttribute="top" secondItem="0cb-5Z-iwK" secondAttribute="bottom" constant="28.5" id="I1Z-Ap-pIk"/>
                             <constraint firstItem="7py-n1-Eis" firstAttribute="centerX" secondItem="KUk-MH-hnD" secondAttribute="centerX" id="Zs2-Jb-63v"/>
                             <constraint firstItem="TPb-0b-Nfo" firstAttribute="centerX" secondItem="7py-n1-Eis" secondAttribute="centerX" id="qb3-xD-u4d"/>
                             <constraint firstItem="kJt-Dc-sPW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="sU2-Hf-sgN"/>
@@ -103,8 +140,17 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
