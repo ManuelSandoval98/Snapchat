@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyC40yxK-uDN-q-L5b8OAqrDGdj7_p9DJJs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>50829570964</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>tecsup.SandovalSnapchat</string>
+	<key>PROJECT_ID</key>
+	<string>snapchat-4feb4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>snapchat-4feb4.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:50829570964:ios:c50a1f00568b0c64cad581</string>
+</dict>
+</plist>
