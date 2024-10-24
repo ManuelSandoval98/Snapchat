@@ -26,28 +26,33 @@ class iniciarSesionViewController: UIViewController {
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
             print("Intentando Iniciar Sesion")
             if error != nil {
-                print("Se presento el siguiente error: \(error)")
-                Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user, error) in
-                    print("Intentando crear un usuario")
-                    if error != nil{
-                        print("Se presento el siguiente error al crear el usuario: \(error)")
-                    } else {
-                        print("El usuario fue creado exitosamente")
-                        Database.database().reference().child("usuarios").child(user!.user.uid).child("email").setValue(user!.user.email)
-                        let alerta = UIAlertController(title: "Creacion de Usuario", message: "Usuario: \(self.emailTextField.text!) se creo correctamente.", preferredStyle: .alert)
-                        let btnOK = UIAlertAction(title: "Aceptar", style: .default, handler: { (UIAlertAction) in
-                            self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
-                        })
-                        alerta.addAction(btnOK)
-                        self.present(alerta, animated: true, completion: nil)
-                    }
-                })
+                print("Se presentó el siguiente error: \(error)")
+                
+                // Mostrar alerta con opciones para crear usuario o cancelar
+                let alerta = UIAlertController(title: "Usuario No Encontrado", message: "El usuario no existe. ¿Desea crear una nueva cuenta?", preferredStyle: .alert)
+                
+                // Opción para crear un nuevo usuario
+                let btnCrear = UIAlertAction(title: "Crear", style: .default) { (action) in
+                    self.performSegue(withIdentifier: "crearUsuarioSegue", sender: nil)
+                }
+                
+                // Opción para cancelar y cerrar la alerta
+                let btnCancelar = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+                
+                // Agregar acciones a la alerta
+                alerta.addAction(btnCrear)
+                alerta.addAction(btnCancelar)
+                
+                // Presentar la alerta
+                self.present(alerta, animated: true, completion: nil)
+                
             } else {
-                print("Inicio de sesion exitoso")
+                print("Inicio de sesión exitoso")
                 self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
             }
         }
     }
+
 
     @IBAction func anonymousLoginTapped(_ sender: Any) {
         signInAnonymously()

@@ -8,6 +8,97 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Crear Usuario View Controller-->
+        <scene sceneID="0ND-1A-1to">
+            <objects>
+                <viewController id="33c-Os-gLS" customClass="crearUsuarioViewController" customModule="SandovalSnapchat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RbG-Vf-vUJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUN-7q-xXZ">
+                                <rect key="frame" x="173.5" y="187" width="67" height="21.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Byv-kW-cdd">
+                                <rect key="frame" x="107" y="233.5" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="gVi-Qs-EAz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMP-hF-UOa">
+                                <rect key="frame" x="157" y="292.5" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jbh-KN-chu">
+                                <rect key="frame" x="107" y="338.5" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Doc-Yh-ZcK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2M-mn-LWV">
+                                <rect key="frame" x="107" y="406" width="200" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Bw2-qc-GpH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Crear Usuario">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                    <color key="baseForegroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="CrearUsuarioTapped:" destination="33c-Os-gLS" eventType="touchUpInside" id="G4c-mi-JLa"/>
+                                    <action selector="IniciarSesionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1it-mh-GHJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREAR NUEVO USUARIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CE1-Pr-Pgw">
+                                <rect key="frame" x="87" y="104" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="93v-tL-S8b"/>
+                                    <constraint firstAttribute="width" constant="240" id="NqK-oj-cbv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kQC-Gv-SVj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jbh-KN-chu" firstAttribute="centerX" secondItem="c2M-mn-LWV" secondAttribute="centerX" id="0lV-Vn-8qy"/>
+                            <constraint firstItem="c2M-mn-LWV" firstAttribute="top" secondItem="Jbh-KN-chu" secondAttribute="bottom" constant="33.5" id="Dxe-eH-Xyo"/>
+                            <constraint firstItem="CE1-Pr-Pgw" firstAttribute="centerX" secondItem="RbG-Vf-vUJ" secondAttribute="centerX" id="KkY-ZT-7at"/>
+                            <constraint firstItem="Byv-kW-cdd" firstAttribute="centerX" secondItem="dMP-hF-UOa" secondAttribute="centerX" id="V5u-ec-Mqh"/>
+                            <constraint firstItem="DUN-7q-xXZ" firstAttribute="centerX" secondItem="Byv-kW-cdd" secondAttribute="centerX" id="b2e-td-65u"/>
+                            <constraint firstItem="Byv-kW-cdd" firstAttribute="top" secondItem="DUN-7q-xXZ" secondAttribute="bottom" constant="25" id="dGa-ww-fSd"/>
+                            <constraint firstItem="CE1-Pr-Pgw" firstAttribute="centerX" secondItem="DUN-7q-xXZ" secondAttribute="centerX" id="dZW-Ls-6NP"/>
+                            <constraint firstItem="DUN-7q-xXZ" firstAttribute="top" secondItem="CE1-Pr-Pgw" secondAttribute="bottom" constant="53" id="diV-DY-GlI"/>
+                            <constraint firstItem="Jbh-KN-chu" firstAttribute="top" secondItem="dMP-hF-UOa" secondAttribute="bottom" constant="25" id="kgq-wM-DyO"/>
+                            <constraint firstItem="dMP-hF-UOa" firstAttribute="top" secondItem="Byv-kW-cdd" secondAttribute="bottom" constant="25" id="ozj-08-4Wg"/>
+                            <constraint firstItem="CE1-Pr-Pgw" firstAttribute="top" secondItem="kQC-Gv-SVj" secondAttribute="top" constant="60" id="uIA-Vl-FYY"/>
+                            <constraint firstItem="dMP-hF-UOa" firstAttribute="centerX" secondItem="Jbh-KN-chu" secondAttribute="centerX" id="wTl-F8-gv7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="Byv-kW-cdd" id="Kkq-gY-ZrZ"/>
+                        <outlet property="passwordTextField" destination="Jbh-KN-chu" id="baT-gI-w4X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rtP-w8-Hts" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="498.55072463768118" y="28.794642857142854"/>
+        </scene>
         <!--Iniciar Sesion View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -126,6 +217,7 @@
                         <outlet property="emailTextField" destination="TPb-0b-Nfo" id="Os7-uD-kta"/>
                         <outlet property="passwordTextField" destination="KUk-MH-hnD" id="jG9-km-3bX"/>
                         <segue destination="BUn-6q-5fb" kind="presentation" identifier="iniciarsesionsegue" id="sLw-FR-mqN"/>
+                        <segue destination="33c-Os-gLS" kind="presentation" identifier="crearUsuarioSegue" id="Dn3-ZL-VaL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -295,6 +387,9 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
