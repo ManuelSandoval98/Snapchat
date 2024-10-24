@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29320E692CC9C20000B81847 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29320E682CC9C20000B81847 /* SnapsViewController.swift */; };
+		29320E6B2CC9CA2D00B81847 /* ImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29320E6A2CC9CA2D00B81847 /* ImagenViewController.swift */; };
+		29320E6D2CC9D6F900B81847 /* ElegirUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29320E6C2CC9D6F900B81847 /* ElegirUsuarioViewController.swift */; };
+		29320E732CC9DADD00B81847 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29320E722CC9DADD00B81847 /* Usuario.swift */; };
 		294ECBAD2CC07EA30008113A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294ECBAC2CC07EA30008113A /* AppDelegate.swift */; };
 		294ECBAF2CC07EA30008113A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294ECBAE2CC07EA30008113A /* SceneDelegate.swift */; };
 		294ECBB12CC07EA30008113A /* iniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294ECBB02CC07EA30008113A /* iniciarSesionViewController.swift */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29320E682CC9C20000B81847 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		29320E6A2CC9CA2D00B81847 /* ImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenViewController.swift; sourceTree = "<group>"; };
+		29320E6C2CC9D6F900B81847 /* ElegirUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegirUsuarioViewController.swift; sourceTree = "<group>"; };
+		29320E722CC9DADD00B81847 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		294ECBA92CC07EA30008113A /* SandovalSnapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandovalSnapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		294ECBAC2CC07EA30008113A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		294ECBAE2CC07EA30008113A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +61,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29320E6F2CC9DA6B00B81847 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				29320E6C2CC9D6F900B81847 /* ElegirUsuarioViewController.swift */,
+				29320E682CC9C20000B81847 /* SnapsViewController.swift */,
+				29320E6A2CC9CA2D00B81847 /* ImagenViewController.swift */,
+				294ECBB02CC07EA30008113A /* iniciarSesionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		29320E712CC9DAB400B81847 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				29320E722CC9DADD00B81847 /* Usuario.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
 		294ECBA02CC07EA30008113A = {
 			isa = PBXGroup;
 			children = (
@@ -72,9 +99,10 @@
 		294ECBAB2CC07EA30008113A /* SandovalSnapchat */ = {
 			isa = PBXGroup;
 			children = (
+				29320E712CC9DAB400B81847 /* Modelos */,
+				29320E6F2CC9DA6B00B81847 /* ViewControllers */,
 				294ECBAC2CC07EA30008113A /* AppDelegate.swift */,
 				294ECBAE2CC07EA30008113A /* SceneDelegate.swift */,
-				294ECBB02CC07EA30008113A /* iniciarSesionViewController.swift */,
 				294ECBB22CC07EA30008113A /* Main.storyboard */,
 				294ECBB52CC07EA40008113A /* Assets.xcassets */,
 				294ECBB72CC07EA40008113A /* LaunchScreen.storyboard */,
@@ -169,9 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29320E692CC9C20000B81847 /* SnapsViewController.swift in Sources */,
+				29320E6B2CC9CA2D00B81847 /* ImagenViewController.swift in Sources */,
+				29320E732CC9DADD00B81847 /* Usuario.swift in Sources */,
 				294ECBB12CC07EA30008113A /* iniciarSesionViewController.swift in Sources */,
 				294ECBAD2CC07EA30008113A /* AppDelegate.swift in Sources */,
 				294ECBAF2CC07EA30008113A /* SceneDelegate.swift in Sources */,
+				29320E6D2CC9D6F900B81847 /* ElegirUsuarioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
